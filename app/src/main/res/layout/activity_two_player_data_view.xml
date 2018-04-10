@@ -1,0 +1,55 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding"
+    android:background="@android:color/holo_orange_light"
+    tools:context=".TwoPlayerDataView">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <EditText
+            android:id="@+id/player1_tf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:textColorHint="@android:color/white"
+            android:hint="Enter Player 1 name" />
+
+        <EditText
+            android:id="@+id/player2_tf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:textColorHint="@android:color/white"
+            android:hint="Enter Player 2 name" />
+
+        <EditText
+            android:id="@+id/board_size_tf"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:textColorHint="@android:color/white"
+            android:hint="Enter Board Size"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/submit_player_data_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
